@@ -4,7 +4,7 @@ import foxIcon from "@iconify/icons-twemoji/fox";
 import bxsUser from "@iconify/icons-bx/bxs-user";
 import bxEnvelope from "@iconify/icons-bx/bx-envelope";
 import bxLockAlt from "@iconify/icons-bx/bx-lock-alt";
-
+import { Link } from "react-router-dom";
 import "../../pages/UserAccount.scss";
 
 export default function Register(): ReactElement {
@@ -28,17 +28,17 @@ export default function Register(): ReactElement {
 
           <div className="input-icons">
             <Icon icon={bxEnvelope} className="icon" />
-            <input type="text" id="email" placeholder="seu email" />
+            <input type="email" id="email" placeholder="seu email" />
           </div>
 
           <div className="input-icons">
             <Icon icon={bxLockAlt} className="icon" />
-            <input type="text" id="password" placeholder="sua senha" />
+            <input type="password" id="password" placeholder="sua senha" />
           </div>
           <div className="input-icons">
             <Icon icon={bxLockAlt} className="icon" />
             <input
-              type="text"
+              type="password"
               id="confirm-password"
               placeholder="confirme sua senha"
             />
@@ -46,7 +46,9 @@ export default function Register(): ReactElement {
           <button type="submit">Cadastrar</button>
         </form>
       </div>
-      <p>já tenho uma conta!</p>
+      <Link to="/login" className="Link">
+        já tenho uma conta!
+      </Link>
     </div>
   );
 }

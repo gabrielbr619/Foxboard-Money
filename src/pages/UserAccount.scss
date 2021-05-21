@@ -1,5 +1,16 @@
 @import '../components/variables';
 
+.Link{
+  color: white;
+  text-decoration: none;
+  margin-top: 1rem;
+
+  &:hover{
+    transition: .2s;
+    color:$light-orange
+  }
+}
+
 .container-geral{
   display: flex;
   flex-direction: column;
