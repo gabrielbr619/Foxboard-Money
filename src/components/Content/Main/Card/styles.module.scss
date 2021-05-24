@@ -1,0 +1,25 @@
+.cardContainer:nth-of-type(2){
+  margin: 0 2.25rem;
+
+}
+.cardContainer{
+  width: 20.938rem;
+  height: 11.25rem;
+
+
+  border-radius: 15px;
+
+  .title{
+    font-weight: bold;
+    font-size: 1.125rem;
+
+    margin-left: 1.063rem;
+    margin-top: 0.375rem;
+  }
+
+  h3{
+    margin-top: 0.438rem;
+    margin-left: 1.063rem;
+    font-size: 2.25rem;
+  }
+}

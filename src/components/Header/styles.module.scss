@@ -1,0 +1,29 @@
+@import "../variables";
+
+
+.header{
+  background: $main-blue;
+
+  height: 5.063rem;
+
+  border-bottom: 1px white solid;
+
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  .profile{
+    margin-top: .5rem;
+    margin-right: 3.375rem;
+    h3{
+      font-weight: bold;
+      font-size: 2.25rem;
+    }
+
+    p{
+      font-size: 1.125rem;
+    }
+  }
+}
