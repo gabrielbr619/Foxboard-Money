@@ -12,8 +12,8 @@ export default function Dashboard(): ReactElement {
       <div style={{ display: "flex", flexDirection: "column", width: "86%" }}>
         <Header />
         <Switch>
-          <Route path="/" component={Main} />
-          <Route path="/teste" component={Output} />
+          <Route exact path="/" component={Main} />
+          <Route path="/output" component={Output} />
         </Switch>
       </div>
     </div>

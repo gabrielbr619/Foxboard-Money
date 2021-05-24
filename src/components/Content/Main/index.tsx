@@ -1,5 +1,6 @@
 import { ReactElement } from "react";
 import Card from "./Card";
+import { ChartLine, ChartPie } from "./Chart";
 import Styles from "./styles.module.scss";
 
 export default function Main(): ReactElement {
@@ -35,7 +36,18 @@ export default function Main(): ReactElement {
             </h1>
             <p>{messageP}</p>
           </div>
-          <div className={Styles.message} />
+          <div
+            className={Styles.message}
+            style={{ width: "30.25rem", height: "260px" }}
+          >
+            <ChartPie />
+          </div>
+        </div>
+        <div
+          className={Styles.message}
+          style={{ width: "100%", height: "260px" }}
+        >
+          <ChartLine />
         </div>
       </div>
     </div>

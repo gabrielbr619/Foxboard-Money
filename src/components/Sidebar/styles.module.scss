@@ -1,6 +1,6 @@
-@import '../variables';
+@import "../variables";
 
-.sidebar{
+.sidebar {
   background: $main-blue;
 
   height: 100vh;
@@ -9,21 +9,65 @@
   position: sticky;
   top: 0;
 
-border-right: white solid 1px;
-  .containerLogo{
+  border-right: white solid 1px;
+
+  .containerLogo {
     width: 100%;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    h1{
+    h1 {
       font-size: 1.875rem;
       margin: 0;
       padding: 0;
       width: 7.875rem;
-    padding: 1rem;
-
+      padding: 1rem;
     }
+  }
+
+  .navContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .Link {
+      text-decoration: none;
+      margin: 0.625rem 0;
+      background: $main-orange;
+      border-radius: 10px;
+
+      &:hover{
+        transition: .3s;
+        background: $darker-orange;
+      }
+      div {
+
+        width: 12.813rem;
+        height: 2.25rem;
+
+        border-radius: 10px;
+
+
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    h3 {
+      margin-left: 1.688rem;
+      font-size: 1.125rem;
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+.active{
+  background: $dark-blue;
+
+  &:hover{
+    color: $darker-orange;
   }
 }

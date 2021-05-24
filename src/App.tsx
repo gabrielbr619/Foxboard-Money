@@ -13,7 +13,8 @@ function App(): ReactElement {
       <Switch>
         <AuthProvider>
           <UserAccount />
-          <PrivateRoute exact path="/" component={Dashboard} />
+
+          <PrivateRoute path="/" component={Dashboard} />
         </AuthProvider>
       </Switch>
     </div>
